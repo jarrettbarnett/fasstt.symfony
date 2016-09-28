@@ -2,6 +2,11 @@
   "name": "Fasstt",
   "version": "1.0.0",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "",
+    "requirejs": "",
+    "modernizr": "",
+    "bootstrap": "",
+  },
   "devDependencies": {}
 }
