@@ -44,7 +44,7 @@ var Config = {
      * @property DIR_NPM
      * @type String
      */
-    DIR_NPM: 'node_modules',
+    DIR_NPM: './node_modules',
 
     /**
      * Path where Bower components are installed. No trailing slash.
@@ -52,7 +52,7 @@ var Config = {
      * @property DIR_BOWER
      * @type String
      */
-    DIR_BOWER: 'src/assets/vendor',
+    DIR_BOWER: './src/assets/vendor',
 
     /**
      * Path to uncompiled source files. No trailing slash.
@@ -60,7 +60,7 @@ var Config = {
      * @property DIR_SRC
      * @type String
      */
-    DIR_SRC: 'src',
+    DIR_SRC: './src',
 
     /**
      * Path to temporary directory (for multi-pass compilation). No trailing slash.
@@ -76,7 +76,7 @@ var Config = {
      * @property DIR_DEST
      * @type String
      */
-    DIR_DEST: 'web',
+    DIR_DEST: './web',
 
     /**
      * Path to documentation output files. No trailing slash.
@@ -87,7 +87,7 @@ var Config = {
     DIR_DOCS: 'docs',
 
     /**
-     * Path to theme asset output files. Goes to root and into Craft.
+     * Path to theme asset output files. Goes to
      *
      * @property DIR_THEME
      * @type String

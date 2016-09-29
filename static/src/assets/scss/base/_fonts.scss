@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Source_Sans_Pro';
+    src: url('../media/fonts/SourceSansPro-Regular.eot');
+    src: url('../media/fonts/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../media/fonts/SourceSansPro-Regular.woff') format('woff'),
+        url('../media/fonts/SourceSansPro-Regular.ttf') format('truetype'),
+        url('../media/fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source_Sans_Pro';
+    src: url('../media/fonts/SourceSansPro-It.eot');
+    src: url('../media/fonts/SourceSansPro-It.eot?#iefix') format('embedded-opentype'),
+        url('../media/fonts/SourceSansPro-It.woff') format('woff'),
+        url('../media/fonts/SourceSansPro-It.ttf') format('truetype'),
+        url('../media/fonts/SourceSansPro-It.svg#SourceSansPro-It') format('svg');
+    font-weight: normal;
+    font-style: $FONT_STYLE_ITALIC;
+}
+
+@font-face {
+    font-family: 'Source_Sans_Pro';
+    src: url('../media/fonts/SourceSansPro-Bold.eot');
+    src: url('../media/fonts/SourceSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../media/fonts/SourceSansPro-Bold.woff') format('woff'),
+        url('../media/fonts/SourceSansPro-Bold.ttf') format('truetype'),
+        url('../media/fonts/SourceSansPro-Bold.svg#SourceSansPro-Bold') format('svg');
+    font-weight: $FONT_WEIGHT_BOLD;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source_Sans_Pro';
+    src: url('../media/fonts/SourceSansPro-BoldIt.eot');
+    src: url('../media/fonts/SourceSansPro-BoldIt.eot?#iefix') format('embedded-opentype'),
+        url('../media/fonts/SourceSansPro-BoldIt.woff') format('woff'),
+        url('../media/fonts/SourceSansPro-BoldIt.ttf') format('truetype'),
+        url('../media/fonts/SourceSansPro-BoldIt.svg#SourceSansPro-BoldIt') format('svg');
+    font-weight: $FONT_WEIGHT_BOLD;
+    font-style: $FONT_STYLE_ITALIC;
+}
+
+/* Copyright (c) 2015 by Eduardo Manso. All rights reserved.
+ * This software is the property of Emtype Foundry and may not be reproduced, used, displayed, modified, disclosed or transferred.
+ * For use these Webfonts you may obtain a valid license at http://www.emtype.net */
+
+@font-face {
+    font-family: 'Geogrotesque';
+        src: url('../media/fonts/Geogrotesque-Rg.eot');
+        src: url('../media/fonts/Geogrotesque-Rg.eot?#iefix') format('embedded-opentype'),
+        url('../media/fonts/Geogrotesque-Rg.woff') format('woff'),
+        url('../media/fonts/Geogrotesque-Rg.ttf') format('truetype'),
+        url('../media/fonts/Geogrotesque-Rg.svg#Geogrotesque-Rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Geogrotesque';
+    src: url('../media/fonts/Geogrotesque-RgIt.eot');
+    src: url('../media/fonts/Geogrotesque-RgIt.eot?#iefix') format('embedded-opentype'),
+        url('../media/fonts/Geogrotesque-RgIt.woff') format('woff'),
+        url('../media/fonts/Geogrotesque-RgIt.ttf') format('truetype'),
+        url('../media/fonts/Geogrotesque-RgIt.svg#Geogrotesque-RgIt') format('svg');
+    font-weight: normal;
+    font-style: $FONT_STYLE_ITALIC;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+font-family: 'Geogrotesque';
+    src: url('../media/fonts/G01_Md.eot'); /* IE9 Compat Modes */
+    src: url('../media/fonts/G01_Md.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../media/fonts/G01_Md.woff') format('woff'), /* Modern Browsers */
+        url('../media/fonts/G01_Md.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../media/fonts/G01_Md.svg#font') format('svg'); /* Legacy iOS */
+    font-weight: $FONT_WEIGHT_MEDIUM;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+font-family: 'Geogrotesque';
+    src: url('../media/fonts/G01_MdIt.eot'); /* IE9 Compat Modes */
+    src: url('../media/fonts/G01_MdIt.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../media/fonts/G01_MdIt.woff') format('woff'), /* Modern Browsers */
+        url('../media/fonts/G01_MdIt.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../media/fonts/G01_MdIt.svg#font') format('svg'); /* Legacy iOS */
+    font-weight: $FONT_WEIGHT_MEDIUM;
+    font-style: $FONT_STYLE_ITALIC;
+    text-rendering: optimizeLegibility;
+}

@@ -1,0 +1,183 @@
+// ----------------------------------------------------------------------------
+// Site Globals
+// ----------------------------------------------------------------------------
+$SITE_MID_WIDTH: 980px; // reduced from 1100 as per marketing request
+$SITE_MAX_WIDTH: 1300px; // layer container uses this with border-box so the inner padding allows everything to be 1280px
+$SPACING_STD: 10px;
+
+// ----------------------------------------------------------------------------
+// Colors
+// ----------------------------------------------------------------------------
+
+$C_WHITE: #ffffff;
+$C_BLACK: #000000;
+$C_OFFBLACK: #2d4245;
+$C_OFFBLACK_1: #1c2d2d;
+$C_OFFBLACK_2: #3A4546;
+$C_OFFBLACK_3: #4A4A4A;
+$C_ERROR: #ff0000;
+
+// CRUSHER TEAL
+$C_BRAND: #007b89;
+$C_BRAND_SHADE: #116268;
+$C_BRAND_TINT_1: #52a8af;
+$C_BRAND_TINT_2: #83c7cc;
+$C_BRAND_TINT_3: #addee1;
+
+$C_BRAND_DARK: #004F57;
+
+// NEW CRUNCHER TEAL
+$C_BRAND_CRUSH: #63B1BC;
+/*$C_BRAND_SHADE: #2599A0;
+$C_BRAND_TINT_1: #52a8af;
+$C_BRAND_TINT_2: #83c7cc;
+$C_BRAND_TINT_3: #addee1;*/
+
+$C_BRAND_NEW: #2599A0;
+
+// MINT CREAM
+$C_MINT_CREAM: #99BEB6;
+$C_MINT_CREAM_TINT_1: rgba(212, 226, 228, .81); // If you change the alpha channel, you need to cut a new image assets/media/images/layer-flourish.png
+$C_MINT_CREAM_TINT_2: #D9EBE7;
+$C_MINT_CREAM_LAYER: #B7CDC2;
+
+// WARBIRD GREEN
+/*$C_BRAND2: #00b08a;*/
+$C_BRAND2_SHADE: #2a876f;
+$C_BRAND2_TINT_1: #67bfa6;
+$C_BRAND2_TINT_2: #98d2c3;
+$C_BRAND2_TINT_3: #c7e5dd;
+
+// NEW BATTLEBIRD
+$C_BRAND2: #8FD6BD;
+$C_BRANDTEXT: #EAF2F0;
+/*$C_BRAND2_SHADE: #5aad90;
+$C_BRAND2_TINT_1: #a2ddc9;
+$C_BRAND2_TINT_2: #beefdf;
+$C_BRAND2_TINT_3: #d8f2eb;*/
+
+// TROY PLUM
+$C_BRAND3: #664659;
+$C_BRAND3_SHADE: #422439;
+$C_BRAND3_TINT_1: #89677d;
+$C_BRAND3_TINT_2: #5D4777;
+$C_BRAND3_TINT_3: #c6b5c0;
+
+// NEW MYST
+$C_BRANDLAYER3: #EAF2F0;
+
+// NEW REBEL
+$C_BRANDLAYER2: #D4E2E4;
+$C_BRANDLAYER2TEXT: #4A4A4A;
+
+// BLUE
+$C_BRAND4: #052e59;
+
+// DATA GOLD
+$C_BRAND_CTA: #e2de00;
+$C_BRAND_CTA_SHADE: #ccc72c;
+
+// EARL GREY
+$C_GREY: #4e5859;
+/*$C_GREY_SHADE: #293c3d;*/
+$C_GREY_TINT_1: #6f7a79;
+$C_GREY_TINT_2: #889091;
+$C_GREY_TINT_3: #a6b1b2;
+$C_GREY_TINT_4: #b8c0c1;
+$C_GREY_TINT_5: #cad0d1;
+$C_GREY_TINT_6: #dcdfe0;
+$C_GREY_TINT_7: #ebeded;
+/*$C_GREY_TINT_8: #ebeced;*/
+
+// NEW VADER GREY
+$C_GREY_SHADE: #373A36;
+$C_GREY_TINT_8: #ebeced;
+
+// BOOM YELLOW
+$C_HIGHLIGHT: #F9E547;
+
+// ----------------------------------------------------------------------------
+// Font Families
+// ----------------------------------------------------------------------------
+
+$FONT_FAMILY_SOURCE: "Source_Sans_Pro", Arial, Helvetica, sans-serif;
+$FONT_FAMILY_GEO: "Geogrotesque", 'Verdana', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+// ----------------------------------------------------------------------------
+// Font Sizes
+// ----------------------------------------------------------------------------
+
+$FONT_SIZE_DEFAULT: 16px;
+
+// ----------------------------------------------------------------------------
+// Font Weights
+// ----------------------------------------------------------------------------
+
+$FONT_WEIGHT_NORMAL: 400;
+$FONT_WEIGHT_MEDIUM: 600;
+$FONT_WEIGHT_BOLD: 700;
+
+// ----------------------------------------------------------------------------
+// Font Styles
+// ----------------------------------------------------------------------------
+
+$FONT_STYLE_NORMAL: normal;
+$FONT_STYLE_ITALIC: italic;
+
+// ----------------------------------------------------------------------------
+// Breakpoint Sizes
+// ----------------------------------------------------------------------------
+// Breakpoint variables, use "min-width"
+$BP_MAJOR_LG_MEDIA: "screen";
+$BP_MAJOR_LG_ARGUMENTS: "(min-width: 960px)";
+$BP_MAJOR_LG_WIDTH: 960;
+$BP_MAJOR_MD_MEDIA: "screen";
+$BP_MAJOR_MD_ARGUMENTS: "(min-width: 768px)";
+$BP_MAJOR_MD_WIDTH: 768;
+$BP_MAJOR_SM_MEDIA: "screen";
+$BP_MAJOR_SM_ARGUMENTS: "(min-width: 320px)";
+$BP_MAJOR_SM_WIDTH: 320;
+$BP_MAJOR_BASE_MEDIA: "screen";
+$BP_MAJOR_BASE_ARGUMENTS: "(min-width: 1em)";
+$BP_MAJOR_BASE_WIDTH: 1;
+
+// Build media query
+//
+// @param {String} $media The media portion of the string: "screen"
+// @param {String} $args The viewport and screen arguments: "(min-width: 320px)"
+// @return {String} An unquoted string: screen and (min-width: 320px)
+@function buildMediaQuery($media, $args) {
+  @return append((unquote($media), and), unquote($args), space);
+}
+
+// Create major media query breakpoint definitions
+$MQ_MAJOR_BASE: buildMediaQuery($BP_MAJOR_BASE_MEDIA, $BP_MAJOR_BASE_ARGUMENTS);
+$MQ_MAJOR_SM: buildMediaQuery($BP_MAJOR_SM_MEDIA, $BP_MAJOR_SM_ARGUMENTS);
+$MQ_MAJOR_MD: buildMediaQuery($BP_MAJOR_MD_MEDIA, $BP_MAJOR_MD_ARGUMENTS);
+$MQ_MAJOR_LG: buildMediaQuery($BP_MAJOR_LG_MEDIA, $BP_MAJOR_LG_ARGUMENTS);
+
+// Strip units
+//
+// @param {String} $number Any number with units
+// @return {Integer} $number without the units
+@function stripUnits($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+// Get parent container offset
+//
+// When dealing with percentage-based fluid containers and children,
+// the parent offset is not simply the gutter of the children set as
+// a negative margin on the parent. Because the width of the child
+// elements plus the total number of gutters determine the total width
+// of the parent object, a calculation must be made to derive the same
+// offset for the parent and children.
+//
+// ((Parent * gutter) / (Parent - gutter)) * -1
+// @param {Integer} $g Desired gutter width, passed in as a percentage
+@function getParentOffset($g) {
+  @if $g <= 0 {
+    @return 0;
+  } @else {
+    @return ((100% * $g) / (100% - $g)) * -1;
+  }
+}

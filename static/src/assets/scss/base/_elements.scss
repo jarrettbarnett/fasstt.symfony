@@ -1,0 +1,73 @@
+body {
+    font: normal 18px/1.33333333333333 $FONT_FAMILY_SOURCE;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+a {
+    color: $C_BRAND2;
+    text-decoration: underline;
+    transition: all 0.25s ease;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: $C_BRAND2_SHADE;
+}
+
+a:active {
+    outline: none;
+}
+
+// ---------------------------------------------------------------------
+// Responsive Media
+// ---------------------------------------------------------------------
+img, audio, canvas, video, picture {
+    max-width: 100%; // media should never overflows it's container
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+// ---------------------------------------------------------------------
+// Basic Links
+// ---------------------------------------------------------------------
+.link {
+    color: $C_BRAND;
+    transition: all 0.25s ease;
+}
+
+.link:hover,
+.link:focus {
+    color: $C_BRAND2_SHADE;
+}
+
+.mix-link-blockLevel {
+    display: block;
+}
+
+.mix-link_CTA {
+    color: $C_BRAND_CTA;
+}
+
+.mix-link_CTA:hover,
+.mix-link_CTA:focus {
+    color: $C_BRAND_CTA_SHADE;
+}
+
+.mix-link_offBlack {
+    color: $C_OFFBLACK;
+}
+
+.mix-link_offBlack:hover,
+.mix-link_offBlack:focus {
+    color: $C_OFFBLACK_1;
+}
+
+.mix-link_removeUnderline {
+    text-decoration: none;
+}

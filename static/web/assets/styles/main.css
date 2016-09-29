@@ -1,0 +1,249 @@
+/* ---------------------------------------------------------------------
+RESET CSS (thanks Eric Meyer)
+------------------------------------------------------------------------ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+:focus {
+  outline: thin dotted; }
+
+:active {
+  outline: none; }
+
+html {
+  overflow-y: scroll;
+  /* Always show a vertical scrollbar, even when there is no scrolling */ }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* ---------------------------------------------------------------------
+ HTML5 Element Reset
+------------------------------------------------------------------------ */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block; }
+
+audio, canvas, video, progress, picture {
+  display: inline-block; }
+
+template {
+  display: none; }
+
+/* ---------------------------------------------------------------------
+ Form Reset Styles
+------------------------------------------------------------------------ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none; }
+
+input[type="search"] {
+  -webkit-appearance: none;
+  box-sizing: content-box; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical; }
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* ---------------------------------------------------------------------
+ Modern Styles
+------------------------------------------------------------------------ */
+/*$C_BRAND_SHADE: #2599A0;
+$C_BRAND_TINT_1: #52a8af;
+$C_BRAND_TINT_2: #83c7cc;
+$C_BRAND_TINT_3: #addee1;*/
+/*$C_BRAND2: #00b08a;*/
+/*$C_BRAND2_SHADE: #5aad90;
+$C_BRAND2_TINT_1: #a2ddc9;
+$C_BRAND2_TINT_2: #beefdf;
+$C_BRAND2_TINT_3: #d8f2eb;*/
+/*$C_GREY_SHADE: #293c3d;*/
+/*$C_GREY_TINT_8: #ebeced;*/
+.isVisuallyHidden {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+@font-face {
+  font-family: 'Source_Sans_Pro';
+  src: url("../media/fonts/SourceSansPro-Regular.eot");
+  src: url("../media/fonts/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("../media/fonts/SourceSansPro-Regular.woff") format("woff"), url("../media/fonts/SourceSansPro-Regular.ttf") format("truetype"), url("../media/fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Source_Sans_Pro';
+  src: url("../media/fonts/SourceSansPro-It.eot");
+  src: url("../media/fonts/SourceSansPro-It.eot?#iefix") format("embedded-opentype"), url("../media/fonts/SourceSansPro-It.woff") format("woff"), url("../media/fonts/SourceSansPro-It.ttf") format("truetype"), url("../media/fonts/SourceSansPro-It.svg#SourceSansPro-It") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Source_Sans_Pro';
+  src: url("../media/fonts/SourceSansPro-Bold.eot");
+  src: url("../media/fonts/SourceSansPro-Bold.eot?#iefix") format("embedded-opentype"), url("../media/fonts/SourceSansPro-Bold.woff") format("woff"), url("../media/fonts/SourceSansPro-Bold.ttf") format("truetype"), url("../media/fonts/SourceSansPro-Bold.svg#SourceSansPro-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Source_Sans_Pro';
+  src: url("../media/fonts/SourceSansPro-BoldIt.eot");
+  src: url("../media/fonts/SourceSansPro-BoldIt.eot?#iefix") format("embedded-opentype"), url("../media/fonts/SourceSansPro-BoldIt.woff") format("woff"), url("../media/fonts/SourceSansPro-BoldIt.ttf") format("truetype"), url("../media/fonts/SourceSansPro-BoldIt.svg#SourceSansPro-BoldIt") format("svg");
+  font-weight: 700;
+  font-style: italic; }
+
+/* Copyright (c) 2015 by Eduardo Manso. All rights reserved.
+ * This software is the property of Emtype Foundry and may not be reproduced, used, displayed, modified, disclosed or transferred.
+ * For use these Webfonts you may obtain a valid license at http://www.emtype.net */
+@font-face {
+  font-family: 'Geogrotesque';
+  src: url("../media/fonts/Geogrotesque-Rg.eot");
+  src: url("../media/fonts/Geogrotesque-Rg.eot?#iefix") format("embedded-opentype"), url("../media/fonts/Geogrotesque-Rg.woff") format("woff"), url("../media/fonts/Geogrotesque-Rg.ttf") format("truetype"), url("../media/fonts/Geogrotesque-Rg.svg#Geogrotesque-Rg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: 'Geogrotesque';
+  src: url("../media/fonts/Geogrotesque-RgIt.eot");
+  src: url("../media/fonts/Geogrotesque-RgIt.eot?#iefix") format("embedded-opentype"), url("../media/fonts/Geogrotesque-RgIt.woff") format("woff"), url("../media/fonts/Geogrotesque-RgIt.ttf") format("truetype"), url("../media/fonts/Geogrotesque-RgIt.svg#Geogrotesque-RgIt") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: 'Geogrotesque';
+  src: url("../media/fonts/G01_Md.eot");
+  /* IE9 Compat Modes */
+  src: url("../media/fonts/G01_Md.eot?#iefix") format("embedded-opentype"), url("../media/fonts/G01_Md.woff") format("woff"), url("../media/fonts/G01_Md.ttf") format("truetype"), url("../media/fonts/G01_Md.svg#font") format("svg");
+  /* Legacy iOS */
+  font-weight: 600;
+  font-style: normal;
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: 'Geogrotesque';
+  src: url("../media/fonts/G01_MdIt.eot");
+  /* IE9 Compat Modes */
+  src: url("../media/fonts/G01_MdIt.eot?#iefix") format("embedded-opentype"), url("../media/fonts/G01_MdIt.woff") format("woff"), url("../media/fonts/G01_MdIt.ttf") format("truetype"), url("../media/fonts/G01_MdIt.svg#font") format("svg");
+  /* Legacy iOS */
+  font-weight: 600;
+  font-style: italic;
+  text-rendering: optimizeLegibility; }
+
+body {
+  font: normal 18px/1.3333333333 "Source_Sans_Pro", Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+a {
+  color: #8FD6BD;
+  text-decoration: underline;
+  transition: all 0.25s ease; }
+
+a:hover,
+a:active,
+a:focus {
+  color: #2a876f; }
+
+a:active {
+  outline: none; }
+
+img, audio, canvas, video, picture {
+  max-width: 100%; }
+
+img {
+  width: 100%;
+  height: auto;
+  display: block; }
+
+.link {
+  color: #007b89;
+  transition: all 0.25s ease; }
+
+.link:hover,
+.link:focus {
+  color: #2a876f; }
+
+.mix-link-blockLevel {
+  display: block; }
+
+.mix-link_CTA {
+  color: #e2de00; }
+
+.mix-link_CTA:hover,
+.mix-link_CTA:focus {
+  color: #ccc72c; }
+
+.mix-link_offBlack {
+  color: #2d4245; }
+
+.mix-link_offBlack:hover,
+.mix-link_offBlack:focus {
+  color: #1c2d2d; }
+
+.mix-link_removeUnderline {
+  text-decoration: none; }
+
+/* ---------------------------------------------------------------------
+ All Breakpoints
+------------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------
+ Mobile Specific Styles
+------------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------
+ Tablet Specific Styles
+------------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------
+ Desktop Specific Styles
+------------------------------------------------------------------------ */

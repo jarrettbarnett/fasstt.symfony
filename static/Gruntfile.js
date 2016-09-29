@@ -3,15 +3,21 @@
 
 module.exports = function(grunt) {
 
-    // All builds are considered to be development builds, unless they're not.
+    // Intelligently lazy-loads tasks and plugins as needed at runtime.
+    require('jit-grunt')(grunt, { versioncheck: 'grunt-version-check' })({ customTasksDir: 'tools/tasks' });
+
+    // check environment
     grunt.option('dev', !grunt.option('stage') && !grunt.option('prod'));
+
+    // set environment for proper config loading
+    var environment = grunt.option('target') || 'dev';
 
     grunt.initConfig({
         // Load `package.json`so we have access to the project metadata such as name and version number.
         pkg: require('./package.json'),
 
-        // Load `build-env.js`so we have access to the project environment configuration and constants.
-        env: require('./env'),
+        // Load `env.js`so we have access to the project environment configuration and constants.
+        env: require('./config/' + environment + '.env'),
 
         // Removes generated files and directories. Useful for rebuilding with fresh copies of everything.
         clean: {
@@ -122,4 +128,4 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-}
+};

@@ -1,0 +1,78 @@
+// ------------------------------------------
+//  Visually Hidden
+// ------------------------------------------
+@mixin isVisuallyHidden {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.isVisuallyHidden {
+  @include isVisuallyHidden();
+}
+// ----------------------------------------------------------------------------
+// Clearfix
+//
+// Micro clearfix. No support below IE8 because of display: table;
+// No arguments available since we want this mixin to be output as a class.
+// ----------------------------------------------------------------------------
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+// ----------------------------------------------------------------------------
+// FontSmoothing
+//
+// Including font-smoothing when necessary to get better
+// antialiasing for custom fonts.
+// ----------------------------------------------------------------------------
+@mixin font-smoothing() {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// ----------------------------------------------------------------------------
+// Top To Bottom Gradient
+//
+// Build a gradient
+// ----------------------------------------------------------------------------
+@mixin gradient ($direction, $start-color, $middle-color, $end-color) {
+  background: linear-gradient(to $direction,  $start-color 0%, $middle-color 75%, $end-color 100%);
+}
+
+
+// ----------------------------------------------------------------------------
+// Heading Style
+//
+// Reusable Text style for .layer-hdg and .headline
+// ----------------------------------------------------------------------------
+
+@mixin hdg_style() {
+
+  // base heading styles
+  text-align: center;
+  font: $FONT_WEIGHT_MEDIUM 28px/1.1 $FONT_FAMILY_GEO;
+  color: $C_BRAND2;
+  margin-bottom: $SPACING_STD;
+
+  // medium screen width styles
+  @media #{$MQ_MAJOR_MD} {
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: $SPACING_STD * 4;
+  }
+}
+

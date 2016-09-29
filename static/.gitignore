@@ -5,4 +5,7 @@ npm-debug.log
 .DS_Store
 .tmp
 .idea
-
+dist/
+selenium-debug.log
+test/unit/coverage
+test/e2e/reports
