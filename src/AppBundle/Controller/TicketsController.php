@@ -8,21 +8,21 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class TicketsController extends Controller
 {
     /**
-     * @Route("/tickets")
+     * @Route("/api/tickets")
      */
     public function IndexAction()
     {
-        return $this->render('AppBundle:Tickets:index.html.twig', array(
+        return $this->render('tickets/index.html.twig', array(
             // ...
         ));
     }
 
     /**
-     * @Route("/ticket/{id}")
+     * @Route("/api/ticket/{id}")
      */
     public function ViewAction($id)
     {
-        return $this->render('AppBundle:Tickets:view.html.twig', array(
+        return $this->render('tickets/view.html.twig', array(
             // ...
         ));
     }
