@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 class DashboardController extends Controller
 {
     /**
-     * @Route("/dashboard")
+     * @Route("/dashboard", name="Dashboard")
      */
     public function IndexAction()
     {
