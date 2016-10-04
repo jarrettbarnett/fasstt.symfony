@@ -5,8 +5,7 @@ body {
 }
 
 a {
-    color: $C_BRAND2;
-    text-decoration: underline;
+    text-decoration: none;
     transition: all 0.25s ease;
 }
 
@@ -24,7 +23,7 @@ a:active {
 // Responsive Media
 // ---------------------------------------------------------------------
 img, audio, canvas, video, picture {
-    max-width: 100%; // media should never overflows it's container
+    max-width: 100%; // media should never overflow it's container
 }
 
 img {
