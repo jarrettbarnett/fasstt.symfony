@@ -8,7 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class TicketsController extends Controller
 {
     /**
-     * @Route("/api/tickets")
+     * @Route("/tickets")
      */
     public function IndexAction()
     {
@@ -18,7 +18,7 @@ class TicketsController extends Controller
     }
 
     /**
-     * @Route("/api/ticket/{id}")
+     * @Route("/ticket/{id}")
      */
     public function ViewAction($id)
     {

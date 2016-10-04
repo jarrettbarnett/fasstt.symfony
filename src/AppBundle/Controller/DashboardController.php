@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 class DashboardController extends Controller
 {
     /**
-     * @Route("/api/dashboard")
+     * @Route("/dashboard")
      */
     public function IndexAction()
     {
@@ -19,7 +19,6 @@ class DashboardController extends Controller
                 'test3' => 'test3data'
             ],
         ];
-        return JsonResponse::create($data);
+        return $this->render('dashboard/index.html.twig', $data);
     }
-
 }

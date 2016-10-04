@@ -8,7 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class ProjectsController extends Controller
 {
     /**
-     * @Route("/api/projects")
+     * @Route("/projects")
      */
     public function IndexAction()
     {
@@ -18,7 +18,7 @@ class ProjectsController extends Controller
     }
 
     /**
-     * @Route("/api/project/create")
+     * @Route("/project/create")
      */
     public function CreateAction()
     {
@@ -28,7 +28,7 @@ class ProjectsController extends Controller
     }
 
     /**
-     * @Route("/api/project/edit/{id}")
+     * @Route("/project/edit/{id}")
      */
     public function EditAction($id)
     {
@@ -38,7 +38,7 @@ class ProjectsController extends Controller
     }
 
     /**
-     * @Route("/api/project/delete/{id}")
+     * @Route("/project/delete/{id}")
      */
     public function DeleteAction($id)
     {
