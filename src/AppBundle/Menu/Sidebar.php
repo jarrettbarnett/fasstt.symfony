@@ -5,7 +5,7 @@ use Knp\Menu\FactoryInterface;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerAwareTrait;
 
-class Builder implements ContainerAwareInterface
+class Sidebar implements ContainerAwareInterface
 {
     use ContainerAwareTrait;
 
@@ -19,7 +19,7 @@ class Builder implements ContainerAwareInterface
         $doctrine = $this->container->get('doctrine')->getManager();
 
         // get projects
-        $projects = $doctrine->getRepository('AppBundle:Projects')->findAll();
+        $projects = $doctrine->getRepository('AppBundle:Project')->findAll();
 
         // create menu
         foreach ($projects as $project)

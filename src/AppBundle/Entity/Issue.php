@@ -5,12 +5,12 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Projects
+ * Issue
  *
- * @ORM\Table(name="projects")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\ProjectsRepository")
+ * @ORM\Table(name="issue")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\IssueRepository")
  */
-class Projects
+class Issue
 {
     /**
      * @var int
@@ -29,11 +29,25 @@ class Projects
     private $title;
 
     /**
+     * @var int
+     *
+     * @ORM\Column(name="project_id", type="integer")
+     */
+    private $projectId;
+
+    /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date_created", type="datetime")
+     * @ORM\Column(name="date_created", type="datetimetz")
      */
     private $dateCreated;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="status", type="string", length=255)
+     */
+    private $status;
 
 
     /**
@@ -47,11 +61,35 @@ class Projects
     }
 
     /**
+     * Set projectId
+     *
+     * @param integer $projectId
+     *
+     * @return Issue
+     */
+    public function setProjectId($projectId)
+    {
+        $this->projectId = $projectId;
+
+        return $this;
+    }
+
+    /**
+     * Get projectId
+     *
+     * @return int
+     */
+    public function getProjectId()
+    {
+        return $this->projectId;
+    }
+
+    /**
      * Set title
      *
      * @param string $title
      *
-     * @return Projects
+     * @return Issue
      */
     public function setTitle($title)
     {
@@ -70,12 +108,13 @@ class Projects
         return $this->title;
     }
 
+
     /**
      * Set dateCreated
      *
      * @param \DateTime $dateCreated
      *
-     * @return Projects
+     * @return Issue
      */
     public function setDateCreated($dateCreated)
     {
@@ -92,6 +131,30 @@ class Projects
     public function getDateCreated()
     {
         return $this->dateCreated;
+    }
+
+    /**
+     * Set status
+     *
+     * @param string $status
+     *
+     * @return Issue
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+
+        return $this;
+    }
+
+    /**
+     * Get status
+     *
+     * @return string
+     */
+    public function getStatus()
+    {
+        return $this->status;
     }
 }
 
