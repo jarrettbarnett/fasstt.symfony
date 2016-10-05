@@ -15,13 +15,28 @@ use AppBundle\Entity\Project;
 class ProjectsController extends Controller
 {
     /**
-     * @Route("/project/{id}", name="project_index", requirements={"id": "\d+"})
+     * @Route("/project/{id}", name="project_index", requirements={
+     *     "id": "\d+"
+     * })
      */
-    public function IndexAction()
+    public function IndexAction($id)
     {
-        return $this->render('projects/index.html.twig', array(
-            // ...
-        ));
+        // get project by id
+        $project = $this->getDoctrine()->getRepository('AppBundle:Project')->find($id);
+
+        // get issues for project
+        $issues = $this->getDoctrine()->getRepository('AppBundle:Issue')->findBy([
+            'projectId' => $project->getId()
+        ]);
+
+        // set viewdata
+        $viewData = [
+            'project' => $project,
+            'issues' => $issues,
+            'pageTitle' => 'Project: ' . $project->getTitle()
+        ];
+
+        return $this->render('projects/index.html.twig', $viewData);
     }
 
     /**
