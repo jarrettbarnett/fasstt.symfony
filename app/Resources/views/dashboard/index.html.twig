@@ -33,11 +33,11 @@
         <table class="table table-striped">
             <thead>
             <tr>
-                <th>#</th>
-                <th>Header</th>
-                <th>Header</th>
-                <th>Header</th>
-                <th>Header</th>
+                <th>Issue #</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Description</th>
+                <th>Edit</th>
             </tr>
             </thead>
             <tbody>
@@ -46,7 +46,10 @@
                 <td>Lorem</td>
                 <td>ipsum</td>
                 <td>dolor</td>
-                <td>sit</td>
+                <td>
+                    <a href="/project/{id}/issue/{issueId}" class="btn btn-primary">Edit</a>
+                    <a href="/project/{id}/issue/{issueId}" class="btn btn-danger">Archive</a>
+                </td>
             </tr>
             <tr>
                 <td>1,002</td>

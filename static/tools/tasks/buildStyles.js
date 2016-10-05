@@ -26,16 +26,6 @@ module.exports = function(grunt) {
             }
         },
 
-        concat: {
-            iconMerge: {
-                src: [
-                    '<%= env.DIR_DEST %>/assets/styles/modern.css',
-                    '<%= env.DIR_SRC %>/assets/media/images/icons/icon-output/icons-svg.css'
-                ],
-                dest: '<%= env.DIR_DEST %>/assets/styles/modern.css'
-            }
-        },
-
         postcss: {
             options: {
                 map: false,
