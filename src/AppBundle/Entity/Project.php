@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Projects
@@ -25,6 +26,7 @@ class Project
      * @var string
      *
      * @ORM\Column(name="title", type="string", length=255)
+     * @Assert\NotBlank()
      */
     private $title;
 
@@ -39,6 +41,7 @@ class Project
      * @var int
      *
      * @ORM\Column(name="author_id", type="integer")
+     * @Assert\NotBlank()
      */
     private $authorId;
 
