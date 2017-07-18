@@ -4,6 +4,7 @@
 
 {% block body %}
 
+    {{ path('ticket_create', {'projectId': projectId}) }}
     <div class="table-responsive">
         <table class="table table-striped">
             <thead>
@@ -16,17 +17,18 @@
             </tr>
             </thead>
             <tbody>
-            {% for  %}
+            {% for issue in issues %}
             <tr>
-                <td>1,001</td>
-                <td>Lorem</td>
-                <td>ipsum</td>
-                <td>dolor</td>
+                <td>{{ issue.id }}</td>
+                <td>{{ issue.title }}</td>
+                <td>{{ issue.author }}</td>
+                <td>{{ issue.description }}</td>
                 <td>
-                    <a href="/project/{id}/issue/{issueId}" class="btn btn-primary">Edit</a>
-                    <a href="/project/{id}/issue/{issueId}" class="btn btn-danger">Archive</a>
+                    <a href="/project/{{ issue.projectId }}/issue/{issue.id}" class="btn btn-primary">Edit</a>
+                    <a href="/project/{{ issue.projectId }}/issue/{issue.id}" class="btn btn-danger">Archive</a>
                 </td>
             </tr>
+            {% endfor %}
             <tr>
                 <td>1,002</td>
                 <td>amet</td>

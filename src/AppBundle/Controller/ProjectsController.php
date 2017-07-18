@@ -32,6 +32,7 @@ class ProjectsController extends Controller
         // set viewdata
         $viewData = [
             'project' => $project,
+            'projectId' => $project->getId(),
             'issues' => $issues,
             'pageTitle' => 'Project: ' . $project->getTitle()
         ];
