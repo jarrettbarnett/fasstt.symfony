@@ -1,4 +1,4 @@
-Symfony 3 Issue Tracker
+Symfony 3 Issue Tracker (alpha)
 ==========
 
 Setup projects and create issues, for the fun of it!
